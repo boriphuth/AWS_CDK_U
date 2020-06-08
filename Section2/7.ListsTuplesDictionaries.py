@@ -25,3 +25,20 @@ l3.insert(2,'z')
 print(l3)   #['a', 'b', 'z', 'c', 'd']
 t1=('a','b', 'c', 'd')
 print(t1)   #('a', 'b', 'c', 'd')
+print(t1[2])    #c
+
+d1={ 'color':"Red", 'count':1, 'fruit':'apple' }
+print(d1)   #{'color': 'Red', 'count': 1, 'fruit': 'apple'}
+print(d1["color"])  #Red
+print(d1.get("count")) #1
+d1["count"]=2
+print(d1)   #{'color': 'Red', 'count': 2, 'fruit': 'apple'}
+print("color" in d1) #True
+print("colors" in d1)   #False
+print(len(d1)) #3
+print(d1.pop("color")) #Red
+print(d1) #{'count': 2, 'fruit': 'apple'}
+del d1["fruit"]
+print(d1)   #{'count': 2}
+d1.clear()
+print(d1)   #{}
